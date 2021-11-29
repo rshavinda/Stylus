@@ -67,7 +67,8 @@
                     android:paddingTop="@dimen/margin_medium_plus"
                     android:src="@drawable/ic_mail_48"
                     android:text="@string/messages"
-                    android:textColor="@color/white"
+                    android:drawableTint="@drawable/category_item_color"
+                    android:textColor="@drawable/category_item_color"
                     android:textSize="@dimen/text_small_plus" />
 
 
