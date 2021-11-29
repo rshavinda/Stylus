@@ -44,55 +44,81 @@
             android:textColor="@color/grey_300"
             android:textSize="@dimen/text_medium" />
 
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:scrollbars="none">
 
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-                <ImageButton
+
+                <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="100dp"
                     android:layout_height="140dp"
+                    android:layout_gravity="center"
                     android:layout_margin="@dimen/margin_medium"
                     android:background="@drawable/btn_bg_category"
                     android:drawableTop="@drawable/ic_mail_48"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
+                    android:paddingTop="@dimen/margin_medium_plus"
                     android:src="@drawable/ic_mail_48"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/text_medium" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|center"
-                    android:layout_marginBottom="@dimen/margin_large"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
-                    android:gravity="center"
                     android:text="@string/messages"
                     android:textColor="@color/white"
+                    android:textSize="@dimen/text_small_plus" />
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@drawable/btn_bg_category"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/ic_message_56"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/padding_large"
+                    android:text="Message"
+                    android:textColor="@color/white"
                     android:textSize="@dimen/text_medium" />
-            </FrameLayout>
 
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="140dp"
-                android:layout_margin="@dimen/margin_medium"
-                android:background="@drawable/btn_bg_category"
-                android:drawableTop="@drawable/ic_message_56"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:paddingTop="@dimen/padding_large"
-                android:text="Message"
-                android:textColor="@color/white"
-                android:textSize="@dimen/text_medium" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@drawable/btn_bg_category"
+                    android:drawableTop="@drawable/ic_mail_48"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/margin_medium_plus"
+                    android:src="@drawable/ic_mail_48"
+                    android:text="@string/messages"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small_plus" />
 
-        </LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:background="@drawable/btn_bg_category"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/ic_message_56"
+                    android:focusable="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/padding_large"
+                    android:text="Message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_medium" />
+            </LinearLayout>
+        </HorizontalScrollView>
 
         <TextView
             android:layout_width="match_parent"
@@ -102,10 +128,75 @@
             android:textColor="@color/grey_300"
             android:textSize="@dimen/text_medium" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="0715575885"
+            android:autoLink="phone"
+            android:textColor="@color/grey_300"
+            android:textSize="@dimen/text_medium" />
+<!--  android:textIsSelectable="true"-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="https://www.techleadintl.com"
+            android:autoLink="web"
+            android:textColor="@color/grey_300"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="https://www.youtube.com/watch?v=mzip2e_Z0YQ"
+            android:textColor="@color/grey_300"
+            android:autoLink="web"
+            android:textSize="@dimen/text_medium" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_businessman"
+                    android:elevation="2dp"
+                    android:layout_gravity="end|top"
+                    android:outlineProvider="none"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="210dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:backgroundTint="@color/blue_700"
+                    app:cardCornerRadius="@dimen/margin_medium_plus"
+                    app:cardElevation="@dimen/default_elevation">
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:numStars="4" />
+                </androidx.cardview.widget.CardView>
+
+            </FrameLayout>
+
+
 
             <FrameLayout
                 android:layout_width="wrap_content"
@@ -138,6 +229,7 @@
             </FrameLayout>
 
         </LinearLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 </FrameLayout>

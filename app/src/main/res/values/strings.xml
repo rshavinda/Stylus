@@ -4,6 +4,7 @@
     <string name="address">Address</string>
     <string name="messages">Messages</string>
     <string name="android_studio">Android Studio</string>
-    <string name="choose_category">Choose category</string>
+    <string name="choose_category"><small><u>Choose</u></small> <font color="#D500F9" size="20"><b>category</b></font> :
+        <big><i> Android</i></big></string>
 
 </resources>
